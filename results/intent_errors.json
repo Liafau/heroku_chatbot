@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Saya ingin mendaftar masuk",
+    "intent": "umum_informasi",
+    "intent_prediction": {
+      "name": "umum_pendaftaran_waktu",
+      "confidence": 0.7620676755905151
+    }
+  }
+]

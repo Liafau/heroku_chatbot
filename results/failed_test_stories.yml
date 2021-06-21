@@ -1,0 +1,26 @@
+version: "2.0"
+stories:
+- story: bertanya 2 (./tests/test_stories.yml)
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: umum_pendaftaran_waktu
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_biaya
+  - action: utter_umum_biaya
+  - intent: umum_informasi  # predicted: umum_tempat_tes: nanti dimana tuh?
+  - action: utter_umum_informasi
+  - intent: thankyou
+  - action: utter_no_worries
+- story: ques 2 (./tests/test_stories.yml)
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: umum_informasi
+  - action: utter_umum_informasi
+  - intent: syarat_wajib_peminatan  # predicted: syarat_nilai: nilai yang dimasukin di rata rata min?
+  - action: utter_syarat_wajib_peminatan
+  - intent: umum_tempat_tes
+  - action: utter_umum_tempat_tes
+  - intent: thankyou
+  - action: utter_no_worries

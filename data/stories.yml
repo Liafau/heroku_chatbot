@@ -1,0 +1,75 @@
+version: "2.0"
+
+stories:
+
+- story: bertanya
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: umum_pendaftaran_waktu
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_biaya
+  - action: utter_umum_biaya
+  - intent: umum_informasi
+  - action: utter_umum_informasi
+  - intent: thankyou
+  - action: utter_no_worries
+  
+- story: tanya
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: syarat_mata
+  - action: utter_syarat_mata
+  - intent: syarat_tinggi
+  - action: utter_syarat_tinggi
+  - intent: thankyou
+  - action: utter_no_worries
+
+- story: nanya
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: umum_kontak
+  - action: utter_umum_kontak
+  - intent: umum_pendaftaran_waktu
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_jurusan
+  - action: utter_umum_jurusan
+  - intent: thankyou
+  - action: utter_no_worries
+
+- story: nanyain
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: umum_informasi
+  - action: utter_umum_informasi
+  - intent: random_militer
+  - action: utter_random_militer
+  - intent: umum_tempat_tes
+  - action: utter_umum_tempat_tes
+
+- story: ques
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: umum_informasi
+  - action: utter_umum_informasi
+  - intent: syarat_wajib_peminatan
+  - action: utter_syarat_wajib_peminatan
+  - intent: umum_tempat_tes
+  - action: utter_umum_tempat_tes
+  - intent: thankyou
+  - action: utter_no_worries
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+

@@ -1,0 +1,625 @@
+version: "2.0"
+
+nlu:
+- intent: sapa
+  examples: |
+    - hei
+    - halo
+    - hi
+    - pagi
+    - siang
+    - sore
+    - malam
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - assalamualaikum
+    - P
+    - mo tanya dong
+    - mau tanya min
+    - tanya dong
+    - mulai
+    - cek
+    - woy 
+    - oi
+    - oy
+    - misi
+    - permisi
+    - ass
+    - salam
+    - halo selamat siang admin
+
+- intent: goodbye
+  examples: |
+    - dadah
+    - goodbye
+    - oke deh
+    - selamat tinggal
+    - sampai nanti
+    - sampai jumpa
+    - bye
+    - nggak
+    - cukup
+    - tidak
+
+- intent: umum_pendaftaran_waktu
+  examples: |
+    - pendaftarannya buka kapan ya?
+    - pendaftaran udah buka?
+    - pendaftaran udah mulai belum?
+    - ini udah bisa daftar?
+    - daftar udah bisa belum ya?
+    - mau daftar bisa?
+    - daftar sekarang udah buka kan?
+    - buka kapan pendaftaran?
+    - bisa daftar sekarang?
+    - ini dah mulai pendaftaran?
+    - Kapan dibuka pendaftaran STSN Tahun 2021
+    - Masih buka untuk pendaftarannya
+    - Kapan dimulai pendaftaran untuk mahasiswa baru?
+    - Kpn pendaftaran
+    - Kapan pendaftaran
+    - udah di tutup atau belum pendaftarannya ?
+    - Saya mau bertanya, apakah stsn membuka pendaftaran T.A 2020/2021?
+    - Saya ingin bertanya soal penerimaan mahasiswa baru stsn, itu jadwal nya kira kira bulan berapa ya? Apakah ada penundaan jadwal pendaftaran karena pandemi corona?
+    - Mohon maaf , untuk penerimaan mahasiswa barunya taun 2020 pembukaan nya kapan ya kak
+    - pengumumam penerimaan mahasiswa baru
+    - Kapan spmb 2020
+    - Apakah pendaftaranya masih ada
+    - Apakah pendaftarn masih tersedia
+    - Kapan pendaftaran akan di buka?
+    - Kapan penerimaan mahasiswa baru
+    - apakah pendaftaran masih ada ?
+    - Mau tanya kapan untuk penerimaan mahasiswa.baru?
+    - Kapan mulai pendaftaran mahasiswa baru?
+    - Kapan waktu pendaftaran mahasiswa baru thn pelajaran 2020/2021
+    - kapan tes untuk mengikuti sekolah kedinasan sandi negara
+    - Kapan pendaftara sekolah sandi negara di buka??
+    - Saya mau tanya,apakah masih menerima pendaftaran?
+    - Kapan STSN thn 2020 buka pendaftaran
+    - Permisi saya mau menanyakan kapan di mulai nya pendaftaran mahasiswa baru 2020
+    - Apa masih bisa daftar?
+    - kapan pembukaan pendaftaran STSN 2020
+    - kapan jadwal pembukaan pendaftaran STSN
+    - apakah pendaftaran masih buka?
+    - Tanggal Pendaftaran
+    - Pendaftran dan jadwal seleksi stsn kapan?
+    - Pendaftaran ya kapan ya pk
+    - Kak kapan buka pendaftran stsn
+    - Pendaftaran nya blm di buka y min?
+    - ingin menanyakan apakah masih bisa melakukan pendaftaran untuk kuliah di sekolah tinggi sandi negara
+    - Apakah benar pendaftaran di undur sampai bulan juni
+    - Untuk spmb tahun 2020 inì tanggal berapa kak?
+    - Kapan dibukanya pendaftarannya kak??
+    - Mohon informasi kapan penerimaan mahasiswa baru dibuka.
+    - Kapan pendafaran STSN di buka?
+    - maaf saya ingin bertanya mengenai info pendaftarannya kapan dimulai ya?
+    - pendaftaran th ajaran 2020/2021 itu kapan ya ? Apakah terhambat oleh pandemik virus covid19?
+    - Kapan penerimaan mahasiswa baru stsn?
+    - Kalo buat tahun 2020 ini apakah stsn sdh membuka pendaftaran mahasiswa baru?
+    - Apakah stsn tahun ini tidak menerima maba seperti halnya stan?
+    - Tanggal berapa pendaftaran online di buka
+    - Permisi kak pendaftaran STSN untuk 2020 dibuka pendaftran tgl berapa bulan berapa kak?
+    - mau tanya apakah tahun sekarang stsn masih buka pendaftaran?
+    - Kapan ya pembukaan pendaftaran untuk mahasiswa baru untuk tahun ini
+    - Saya mau tanya, apa stsn tahun ini buka?
+    - Permisi, untuk penerimaan mahasiswa baru stsn tahun 2020 kapan ya kak?
+    - Kapan ya pembukaan pendaftaran untuk mahasiswa baru untuk tahun ini
+    - Kapan pendaftaran tahun ajaran 2020/2021 dibuka?
+    - kapan pendaftaran dibuka?
+    - Saya ingin menanyakan untuk pendaftaran tahun 2020/2021. Kira kira akan dilaksanakan pada tanggal berapa.
+    - Tgl dan bulan berapa buka pendaftaran stsn
+    - Kapan kira-kira pendaftaran sekolah tinggi sandi negara dibuka?
+    - Pendaftaran tahun ajaran 2020/2021 kapan dibuka
+    - Pendaftaran tahun ajaran 2020/2021 dibuka kapan ya?
+    - Saya mau menanyakan utk penerimaan siswa STSN tahun 2020 kapan ya dimulai pendaftarannya?
+    - Untuk pembukaan pendaftaran d stsn kapan ya??
+    - kalo boleh tau pendaftaran masih dibuka atau ngga yahh kak
+    - mau tanya untuk pendaftaran di STSN sudah dibuka belum ya
+    - Mau daftar stsn
+    - saya ingin menanyakan masalah jadwal penerimaan mahasiswa baru 2020/2021, apakah pendaftaran online sudah dibuka?
+    - Info pendaftaran 2020 kapan pak?
+    - Selamat siang, saya mau bertanya, apakah pendaftaran online STSN di undur? Jika memang di undur, kira-kira pendaftaran online nya kapan ya?
+    - Saya ingin bertanya, untuk pembukaan pendaftaran calon mahasiswa baru STSN kapan yah ?
+    - Pendaftaran onlinenya kapan???
+    - Kak kapan pendaftaran dilakukan?
+    - halo, saya ingin menanyakan pendaftaran stsn 2020 kapan dibukanya ya
+    - Izin bertanya,apakah pendaftaran online untuk masuk sekolah kedinasan Sandi Negara juga diundur?
+    - Kapan pembukaan mohon info
+    - pak/ibu apakah pendaftaran Stan masih dibuka?
+    - saya mau bertanya seputar pendaftaran untuk STSN 2020 kapan dibuka ya?
+    - maaf ka saya mau tanya pendaftaran resmi stsn di adakannya kapan ya
+    - kapan pendaftaran stsn tahun 2020 ?
+    - Maaf ka kalo pendaftaran stsn di sahkan nya kapan
+    - Untuk pendaftaran kapan kak?
+    - Pendaftaran online nya kapan ya? Terus web untuk pendaftarannya apa?
+    - saya mau tanya kapan pendaftaran nya di mulai untuk tahun 2020?
+    - pendaftarannya dibuka kapan Minta tolong supaya saya diberitahu lewat email saya
+    - Kapan pendaftaran dibuka?
+    - Saya ingin bertanya apakah pendaftarannya juga akan diundur? Tidak sama dengan tanggal tahun kemarin
+    - Saya mau menanyakan SMPB STSN perkiraan tanggal berapa ya?
+    - Apakah pendaftaran masih dibuka?
+    - mau nanya kpn pembukaan pendaftarannya
+    - Kapan di buka pendaftarannya ?
+    - Saya minta info tanggal pendaftaran STSN 2020/2021
+    - Kapan pendaftaran untuk tahun ajaran 2020 / 2021
+    - apakah STSN membuka PMB untuk saat saat ini?
+    - Kapan buka untuk pendaftaran mahasiswa baru?
+    - Kpan dibuka pendaftaran STSN untuk tahun ini
+    - Untuk pendaftaran bisa dilakukan dr kapan dan website pendaftaran nya apa
+    - Kapan penerimaan mahasiswa baru stsn.?
+    - kak kalo boleh tau link buat pendaftaran apa ya,bisa di bantu
+    - Kapan penerimaan mahasiswa baru stsn.?
+    - Kapan penerimaan calon mahasiswa baru STSN tahun 2020 di buka
+    - Kapan SPMB 2020 dibuka?
+    - Kapan update SPMB STSN 2020?
+    - kapan pendaftaran STSN dimulai?
+    - Kapan pendaftaran tahun 2020 STSN di buka?
+    - pembukaan pendaftarannya kapan ?
+    - Kapan seleksi STSN akan dilaksanakan?
+    - kapan buka pendaftaran ini ?
+    - untuk pendaftaran dimulai kapan dan ditutup kapan
+    - kalau pembukaan pendaftaran mahasiswa baru 2020/2021
+    - Pembukaan pendaftaran online spmb stsn 2020/2021 kapan ya?
+    - Mohon informasi kapan oendaftaran STSN dimulai. 
+    - juga kapan tanggal daftarnya,
+    - apakah tahun ini membuka pendaftaran
+    - Kapan pembukaan pendaftaran spmb STSN?
+    - mau tanya untuk pendaftarannya dibuka kapan
+    - Kapan pembukaan pendaftaran tahun 2020
+    - Apa sudah buka pendaftaran untuk 2020/2021?
+    - Kapan ya pembukaan mahasiswa stdn? Tolong informasinya
+    - terus pendaftatannya kapan di buka nya kk?
+    - kak ini pendaftarannya masih dibuka atau udah ditutup?
+    - Kak, ini pendaftarannya udah ditutup atau belum ya?
+    - Pembukaan Pendaftaran mahasiswa baru ?
+    - mohon kami diberi informasi ttg pendaftaran mahasiswa baru th 2020
+    - Apakah masih dibuka pendaftarannya
+    - Saya ingin mendaftar masuk
+    - ingin melanjutkan jenjang pendidikan ke jenjang yang lebih tinggi dan saya berminat melanjutkan sekolah ke sekolah sandi negara
+    - jadwal pendaftaran
+    - Untuk pendaftaran taruna baru 2020 kapan?
+    - Jadwal pendaftaran untuk tahun 2020
+    - apakah pendaftaran untuk tahun 2020 udah di buka?
+    - Kapan seleksi masuk dimulai?
+    - Kapan jadwal pendaftaran mahasiswa baru ?
+    - saya ingin bertanya mengenai pendaftaran stsn di tahun 2020, apa stsn membuka pendaftaran online atau hanya offline. jika ada boleh saya minta link tersebut?
+    - Apakah ada pendaftaran mahasiswa baru di tahun ini ?.
+    - Saya ingin bertanya apakah sekolah tinggi sandi negara ini pendaftaran dibuka di tahun ini? Kalau iya lebih tepatnya tanggal berapa ya pak/buk.
+    - izin saya mau bertanya tentang pendaftaran mahasiswa baru tahun 2020/2021 kapan di buka lagi
+    - Kak kapan yah pembukaan pendaftaran sandi negara
+    - Sa boleh tanya soal Website untuk daftarnya tahun 2020 ??? Apakah dibuka daftar nya di bulan ini.atau tdk.
+    - Dan kapan di buka daftarnya.
+    - Kapan SPMB STSN mulai di buka pendaftaran?
+    - adakah pendaftaran mahasiswa baru
+    - Saya mau nanya dong ka kapan penerimaan calon mahasiswa baru?
+    - Pendaftaran untuk tahun 2020 bulan apa ?
+
+- intent: umum_biaya
+  examples: |
+    - rincian biaya sampai wisuda berapa ya?
+    - takut ada biaya besar selama pendidikan
+    - ada informasi tentang beasiswa STSN?
+    - untuk masuk bayar berapa ya?
+    - biaya pendidikan berapa ya?
+    - ada biaya pendidikan dan biaya tinggal?
+    - ini gratis semua?
+    - uang kuliah berapa?
+    - ada uang kuliah?
+    - ada bayar?
+    - bayar berapa?
+    - uang keluar berapa?
+    - ada ukt?
+    - biaya nya berapa?
+    - selain gratis di STSN apakah ada tunjangan makan
+    - Salam.Mohon infonya apakah ada full beasiswa untuk jurusan manajemen persandian ?
+    - apakah benar bahwa stsn sedang membuka kuliah gratis dan ikatan dinas 2020
+    - saya mau minta info tentang prosedur pendaftaran dan syarat pendaftaran malalui jalur Beasiswa
+    - Apa benar perkuliahan ini membuka perkuliahan gratis.. syarat nya apa saja
+    - saya ingin mencoba dari sekarang, karena saya dari keluarga tak bercekupan
+
+- intent: umum_asrama
+  examples: |
+    - Apakah terdapat asrama di Poltekssn untuk yang dari luar kota?
+    - Apakah poltekssn menyediakan asrama tempat tinggal?
+    - stsn menyediakan asrama tidak ya?
+    - ada asramanya?
+    - untuk tempat tinggal apakah disediakan?
+ 
+- intent: umum_kuota
+  examples: |
+    - Daya tampungnya berapa ya?
+    - kuota untuk stsn berapa ya?
+    - kuota untuk poltekssn berapa ya?
+    - kuota poltekssn tahun ini berapa ya?
+    - Berapa jumlah penerimaan mahasiswa baru setiap tahun
+    - Berapa kuota penerimaan stsn 2020?
+    - Berapa orang yang diterima tahun ini?
+    - Berapa jumlah kuota tahun ini?
+    - Tahun ini nerima berapa ya?
+    - tahun ini jumlah orang masuknya berapa?
+    - Nerima orang berapa nanti?
+    - berapa jumlah orang yang di terima tahun ini?
+    - Kira-kira nerima berapa ya?
+
+- intent: umum_informasi
+  examples: |
+    - Saya ingin daftar bagaimana
+    - Cari info penerimaan mahasiswa baru
+    - cara daftarnya gimana ya?
+    - Ingin mengikuti pendaftaran calon siswa akademi stsn 2020/2021
+    - Saya ingin mendaftar di STSN, belajar untuk mengembangkan sandi-sandi disetiap negara.
+    - Saya mau tanya kak STSN itu cara masuknya bagaimana
+    - Saya ingin mendaftar di ikatan dinas ini. Lalu bagaimana daftarnya
+    - Minta info tentang pendaftaran stsn
+    - saya ingin bergabung dalam pendidikan ini
+    - Mau daftar ikatan dinas
+    - Gimana cara daftarnya
+    - Gimana cara pendaftaran nya
+    - mohon informasi terkait penerimaan siswa di STSN untuk tahun 2020 - 2021. Terimaksih
+    - Bagaimana cara melakukan pendaftaran?
+    - Ingin mendaftar
+    - Daftar
+    - pendaftaran
+    - saya ingin mendaftar stsn nci bagaimana caranya ya?
+    - Tata cara mendaftar bisa dibantu
+    - bagaimana caranya mendaftar?
+    - Cara daftar
+    - Cara mendaftar gimana ya kak
+    - Saya minat skolah di sini
+    - Untuk pendaftaran bagaimana?
+    - Info pendaftarar
+    - Tata cara pendaftaran nya bagaimana ya?
+    - Mau daftar sekolah kedinasan
+    - Cara daftarnya gimana ya?
+    - gimana caranya mendaftar
+    - Saya mau masuk STSN
+    - Saya ingin mendaftar di sekolah tinggi sandi negara Mohon responnya
+    - cara mendaftarnya bagaimana
+    - Saya lulusan tahun 2020 mau daftar di stsn
+    - Pendaftaran masuk sekolah tinggi sandi negara tahun 2020
+    - Bagaimana cara daftar calon mahasiswa baru
+    - Pendaftaran stsn
+    - mencari info STSN
+    - Informasi pendaftaran
+    - Saya ingin mendaftar sebagai mahasiswa di STSN
+    - mau daftar nya gimana ya
+    - Cara pendaftarannya gimana ya?
+    - Cara daftarnya bagaimana
+    - Gimana cara daftar
+    - apakaah pendaftaran stsn 2020 msih dibuka hingga april?
+    - Cara mendaftar kuliah di STSN
+    - Ingin mendaftar menjadi mahasiswa STSN
+    - Bagaimana cara daftar STSN?
+    - saya ingin masuk stsn
+    - Ingin mendaftar kuliah
+    - Ingin menjadi mendaftar menjadi calon mahasiswa STSN
+    - Saya ingin mendaftar sebagai calon mahasiswa di Sekolah Tinggi Sandi Negara
+    - Cara pendaftarannya gimana ya?
+    - Mohon infonya serta bagaimana cara pendaftaran nya
+    - apakah saja per syaratan utk masuk ke Sekolah Tinggi Sandi Negara
+    - persyaratan masuk sekolah tinggi sandi negara , apa saja terimakadih
+    - KK STSN cara masuk nya gmn KK  Apa ada persyaratan khusus
+    - apa persyaratan masuk stsn
+    - Kak syarat yg di unggah untuk stsn apa aja Selamat pagi, Saya hendak menyekolahkan anak saya perempuan, bagaimana caranya, dan syarat syaratnya
+    - informasi persyaratan pendaftaran STSN dapat diunduh dimana ya
+    - apa saja persyaratannya
+    - apa saja dokumen dan persyaratan untuk mendaftar STSN?
+    - Mohon info pendaftaran mahasiswa baru
+    - mohon info syarat pendaftatran mahasiswa baru 2020/2021
+    - Cara mendaftar di STSN
+    - Saya ingin mendaftar di STSN
+    - Pendaftaran
+    - beritahu link pendaftaran STSN
+    - Cara pendaftaran online nya gimana yha?
+    - Saya mau daftar
+    - Ingin Daftar
+    - persyaratan untuk SPMB STSN tahun 2020 apakah sama dengan tahun 2019?, mohon infonya kak.
+    - Informasi tentang pendaftaran
+    - saya siswa smk jurusan rekayasa perangkat lunak. Ingin mengetahui bagaimana cara masuk di stsn ini
+    - Saya ingin mendaftar menjadi calon sekolah tinggi sandi negara.
+    - Dan apa saja syarat-syaratnya?
+    - Cara daftar nya gimana
+    - Persyaratan masuk STSN
+    - Saya ingin menanyakan bagaimana prosedur pendaftaran STSN
+    - Saya ingin mendaftar kan diri sebagai kedinasan mohon bantuannya kak
+    - Apa saja syarat seleksi masuk Sekolah Tinggi Sandi Negara?
+    - Cara daftar
+    - Pendaftaran
+    - Bagaimana cara saya untuk mendaftar?
+    - Gimana cara pendaftaranya
+    - Daftar
+    - Cara mendaftar stsn
+    - cara mendaftara stsn gimana kak secara online??
+    - gimana prosedural pendaftaran STSN dan juga gimana biaya serta bagaimana persyaratannya?
+    - Ingin bertanya bagaimana cara pendaftaran
+    - Informasi
+    - Mohon informasi mengenai seleksi penerimaan siswa STSN TA 2020/2021 ini dan bagaimana prosesnya.
+    - persyaratan untuk masuknya apa saja untuk surat-suratnya yang perlu dibawa
+    - Pendaftaran masuk STSN bagaimana ?
+    - Dan tehnis pendaftaran awal apakah datang langsung atau via website terlebih dahulu?
+    - saya ingin tau bagaimana syarat masuk dan tes di sekolah stsn ini
+    - apa saja syarat syarat yg dibutuhkan
+    - ingin bertanya syarat masuk ke Sekolah Tinggi Sandi Negara
+    - Mau daftar
+    - jika benar bagaimana cara mendaftar dalam program tersebut
+    - Mas bagaimana cara daftar stsn ??
+    - Cara pendaftarannya bagaimana ?
+    - Syarat-syarat pendaftaran bagaimana
+    - Saya ingin mendaftar masuk
+    - tolong kirim persyaratanx
+    - Tolong kirimkan informasi penerimaan mahasiswa baru.
+    - Pingin masuk stsn
+    - Aku mau menjadi bagian dari kalian
+    - ketentuan persyaratan masuk
+    - Daftar stsn
+    - Bagaimana cara mendaftar di STSN?
+    - Apa saja Persyaratan pendaftarannya?
+    - Persyaratan untuk pendaftar tahun 2020/2021??
+    - Mohon infonya
+    - Saya ingin sekali masuk disini
+    - Butuh info stsn
+    - apa syarat masuk ke stsn ini
+    - Saya ingin tergabung didalamnya, bagaimana mana cara untuk mendaftar
+    - mohon maaf sebelumnya saya ingin bertanya bagaimana format pendaftaran secara online di STSN ini
+    - bagaimana cara nya agar bisa mendaftar di stsn
+    - mohon maaf sebelumnya saya ingin bertanya mengenai bagaimana ketentuan untuk daftar secara online disini.
+    - Syarat pendaftaran masuk stsn apa saja?
+    - Izin bertanya bagaimana syarat untuk masuk STSN ini ya?
+    - Saya mau daftar mohon petunjuk nya pak.
+    - bagai mana cara mendaftar online nya? 
+    - apakah saja per syaratan utk masuk ke Sekolah Tinggi Sandi Negara
+    - persyaratan masuk sekolah tinggi sandi negara , apa saja
+    - STSN cara masuk nya gmn
+    - apa persyaratan masuk stsn
+    - syarat yg di unggah untuk stsn apa aja
+    - Saya hendak menyekolahkan anak saya perempuan, bagaimana caranya, dan syarat syaratnya
+    - informasi persyaratan pendaftaran STSN dapat diunduh dimana ya
+    - apa saja persyaratannya
+    - Apa saja persyaratan nya
+
+- intent: umum_kontak
+  examples: |
+    - Apakah ada link buat helpdesk SSN min?
+    - apakah ada nomor telponnya?
+    - ada nomor telponnya nggak ya?
+    - ada kontaknya?
+    - kontak yang bisa dihubungi dimana ya?
+    - minta nomr kontak dong
+    - ada akun yang bisa dibungi?
+    - ada akun wa?
+    - ada akun telegram?
+    - bisa hubungin kemana aja min?
+    - mau telepon kemana ya?
+    - akun tele apa wa ada?
+    - minta nomr telepon dong
+    - Ka aku mau tanya tanya tentang pendaftarannya ngga bisa lewat wa ya?
+    - Sy boleh minta wa nya ?. Agar lebih mudah utk tanya².
+    - minta cp nya dong
+    - ada contact person kak?
+
+- intent: umum_jurusan
+  examples: |
+    - Apakah siswi SMA jurusan IPS dapat mendaftar di STSN dan kapan pendaftaran STSN 2020 dibuka ? 
+    - Kak izin bertanya, apakah smk multimedia bisa masuk STSN kah?
+    - apakah smk multimedia bisa masuk STSN ya? terima kasih kak
+    - apakah SMK jurusan multimedia bisa masuk STSN?
+    - Untuk stsn ini apa boleh anak ips masuk ke stsn ?
+    - Kak sekolah tinggi sandi negara bisakah utk jurusan ips?
+    - Saya smk jurusan farmasi, apakah bisa bersekolah di sandi negara?
+    - Apakah lulusan ips bisa daftar STSN
+    - Mohon maaf, apakah lulusan SMK teknik mesin bisa mendaftar seleksi?
+    - Mohon informasi kukiah kedinasan gratis.apakah bs terima lulusan SMK berbagai jurusan?
+    - saya mau tanya jurusan SMA ips bisa masuk atau tidak
+    - latar belakang pendidikan saya di SMA adalah IPS, apakah saya bisa mendapatkan kesempatan untuk belajar di Sekolah Sandi dan Siber Nasional?
+    - saya lulusan SMK teknik elektronika industri apakah bisa mendaftarkan di sekolah tinggi sandi negara
+    - apakah calon mahasiswa/i yang akan diterima harus dari jurusan ipa? bagaimana jika ips? apa tidak bisa diterima?
+    - Jika saya berasal dari SMK dgn jurusan selain TI apakah masih bisa mendaftar smpb STSN? Terimakasih..
+    - apakah stsn hanya untuk jurusan ipa ya kak?
+    - Apakah menerima smk Jerusan akuntansi?
+    - Apakah jurusan Ips tidak dapat mendaftar di STSN?
+    - apakah stsn tidak menerima smk lulusan selaim bidang yg telah di tentukan?
+    - Kak mau tanya apakah SMK jurusan teknik komputer dan jaringan bisa mendaftar?
+    - Kak saya ingin tanya saya lulusan SMK jurusan akuntansi apa bisa daftar di STSN
+    - Apakah lulusan smk jurusan multimedia bisa daftar juga??
+    - Izin bertanya, ketentuan Sekolahnya itu boleh tidak dari lulusan Teknik Komputer dan Jaringan?
+    - Kak apa lulusan SMK negeri jurusan multimedia bisa daftar di STSN
+    - bertanya Apakah jurusan ips bisa masuk di stsn ?
+    -Apakkah jurusan ips bisa masik stsn..?
+    - Permisi min, mau tanya.. ini SMA jurusan IPS apakah tidak bisa mendaftar di STSN?
+    - Apakah dari lulusan SMA IPS bisa mendaftar STSN
+    - Kak mau nnyak kalo lulusan MA ips gmn apa gabisa kk
+    - Permisi mau tanya apakah STSN juga diperuntukkan untuk anak ips?
+    - Izin bertanya apakah SMK Penerbangan jurusan Aircraft Electricity (Kelistrikan Pesawat Udara) bisa mendaftar ke STSN?
+    - Apakah lulusan SMK Multimedia bisa ikut mendaftar di STSN?
+    - Permisi apa untuk lulusan sma ips bs daftar seleksi stsn?
+    - kakak apakah siswa SMK Jurusan Administrasi Perkantoran bisa masuk STSN
+    - Untuk penerimaan mahasiswa baru di STSN 2020 apa lulusan SMK jurusan perkantoran tidak boleh ikut seleksi?
+    - Untuk syarat pendaftaran lulusan SMK Teknik Pemesinan tahun 2018 apa boleh mendaftar?
+    - Apakah smk jurusan teknik tenaga listrik bisa ikut mendaftarkan diri?
+    - Kk untuk lulusan smk bisa masuk ngak kk
+    - Jurusan apa saja yang bisa masuk?
+    - Sy kan smk jurusan pariwisata apa bisa daftar ?
+    - Dapatkah saya mendaftar untuk tahun ini, jika saya lulusan SMK multimedia(IPA)?
+    - Apakah lulus SMK 2019 jurusan Multimedia bisa mendaftar STSN?
+    - saya ingin daftar sekolah sandi negara tetapi saya anak ips ,buka jalur khusus untuk anak ips dong plzzz
+    - kalo jurusan ips beneran nggak bisa ya? pengen banget soalnya
+    - dari sma aja ya ini?
+
+- intent: umum_tempat_tes
+  examples: |
+    - Saya mau bertanya tentang lokasi pelaksanaan seleksi, apakah ujianya kita harus ke tempat(bogor) atau akan ada ujian online? trims,wassalam.
+    - mau nanya min ujiannya lokasinya hanya di bogor/jkt, yogya aja 
+    - Apakah di medan tidak ada lokasi ujiannya
+    - Klau tes hrus ke Jakarta/Yogyakarta ya min?
+    - pelaksanaan tes STSN tidak boleh di lakukan di makassar yah? Saya inda asli makassar ingin mendaftar STSN tapi terkendala dengan biaya transportasi ke tempat pendaftaran yaitu di bogor, dan jogja :(:(
+    - Saya ingin menanyakan apakah tempat pelaksanaan spmb STSN pada masa pandemi corona ini tetap hanya di adakan di 2 tempat? Bogor dan yogyakarta? Sementara saat sekarang ini kita sudah susah berpergian kesana. Terutama kami ygberdomisili di luar pulau jawa pak/bu. Saya harap lembaga penyelenggara memperimbangkannya kami punya impian untuk bisa jadi salah satu mahasiswa stsntetapi terhalang karena lokasi tempat.jikadiizinkan saya kasih masukansebaiknytesdiadakandisetiap daerah
+    - untuk lokasi tes spmb stsn ada di wilayah mana saja ? Apakah ada di makassar?
+    - lokasi tes nya berada di mana saja?
+    - tes nya nanti dimana aja ya 
+    - tesnya dimana aja sih min?
+    - lokasi tes bisa dimana?
+    - tesnya dimana ya?
+    - min, kalau untuk tes tempatnya dimana ya?
+    - min kita bisa lihat lokasi tes dimana ya?
+    - lokasi tesnya dimana pak?
+    - apakah lokasi testnya hanya di bogor saja???
+
+- intent: syarat_wajib_peminatan 
+  examples: |
+    - Jika nilai bahasa inggrisnya ada dua,minat dan wajib yang dipakai yang mana ya ?
+    - nilai bahasa inggris yang digunakan wajib atau minat ya ?
+    - nilai matematika dan bahasa inggris yg digunakan minat atau wajib ya?
+    - Khususnya untuk SMA saya terdapat 2 mata pelajaran Matematika terdiri dari umum dan minat,,maka dari itu apakah nilai Matematika yg dimasukan ke dalam bagian Entri Nilai tersebut
+    - nilai rapot mtk saya di rapot ada dua, matematika wajib dan matematika peminatan .kira2 pilih yg mana ya? 
+    - saya izin bertanya untuk nilai matematika yang diinput pada saat pendaftaran poltek ssn itu nilai matematika umum atau nilai matematika peminatan?
+    - nilai matematika yg dimasukkan matematika wajib atau peminatan?
+    - kalau untuk nilai mtk itu,bgaimna ktntuannya bagi kur13?,krena mapel mtk ada 2:mtk wajib,dan mtk peminatan ,yg mana dimasukkan?
+    - kak nilai matematika yang di masukan itu nilai matematika umum dan minat di rata rata atau salah satu?
+    - Izin bertanya, di bagian Entri nilai rapor matematika dan bahasa Inggris yang dimasukan nilai pengetahuan/keterampilan/rata² pengetahuan dan keterampilan?
+    - Maaf mau tanya, pada saat pengisian nilai matematika & bahasa inggris, yang dimasukan nilai pengetahuan atau nilai keterampilan atau nilai akhirnya ya? Karena di rapot ada nilai pengetahuan & keterampilan matematika/inggris.
+    - Upload berkas nilai raport semester iv dan v itu nilai pengetahuan saja atau dengan nilai keterampilannya juga?
+    - untuk nilai yang diupload, apakah memang hanya nilai pengetahuan matematika dan bahasa inggris saja? jadi nilai keterampilan matematika dan bahasa inggris tidak perlu diupload?
+    - min nilai rapot semester 4 dan 5 yang diupload itu nilai pengetahuan aja apa sama keterampilan?
+    - min nilai matematika dan bahasa inggris yang diinput itu pengetahuan atau keterampilan?
+    - min nilai matematika semester 4 dan 5.apakah matematika wajib atau matematika peminatan
+    - untuk nilai rapot yang di cantumkan di web STSN itu kan nilai MTK dan Bahasa Inggris. Dan nilai tersebut di ambil dari nilai pengetahuan atau nilai keterampilan ya?
+    - untuk nilai rapot yang di cantumkan di web STSN itu kan nilai MTK dan Bahasa Inggris. Dan nilai tersebut di ambil dari nilai pengetahuan atau nilai keterampilan ya?
+
+- intent: syarat_tinggi
+  examples: |
+    - Ada minimal tinggi badan tidak ya?
+    - apakah sekolah tinggi sandi negara ini memakai tinggi badan? Maksudnya apakah ditentukan berapa tinggi badan yang bisa masuk?
+    - untuk stsn apa benar tidak ada persyaratan tinggi badan?
+    - apakah calon pendaftar stsn harus memiliki kriteria tinggi badan tertentu ?
+    - kalau persyaratan masuk stsn ada minimal tinggi badan dan soal kesehatan mata minus tidak kak?
+    - apakah ada batasan tinggi badan?
+    - Apakah ada persyaratan tinggi badan
+    - saya pendek bisa daftar?
+    - tinggi saya kurang? apa bisa?
+    - berapa minimalnya tingginya min?
+    - ingin bertanya mengenai persyaratan masuk STSN apakah ada batasan minimal tinggi badan?hal ini dikarenakan di website resmi STSN tidak dicantumkan adanya persyaratan tinggi badan.
+    - Kak kalau tinggi badan cuma 194 masih bisa keterima kan???
+    - Kak mau nanya untuk tinggi badan minimal tidak ditentukan..??
+    - apakah STSN mempunyai persyaratan minimal tinggi badan? Jika ada, berapa minimalnya min?
+    - Apakah kalau daftar STSN tidak perlu memiliki tinggi badan tertentu?
+    - mau tanya untuk persyaratan mata minus bolehkah? Untuk tingginya minimal berapa yah min?
+    - Apakah ada ketentuan min tinggi badan?
+    - Apakah STSN juga ada seleksi tinggi badan? Kalau ada minimal tinggi badan berapa ya kak?
+    - Apakah semua jurusan di stsn tinggi badan harus 165cm buat laki laki.?
+    - Kak apakah ada persyaratan tinggi badan untuk pendaftar spmb perempuan ?
+    - untuk menjadi bagian dari STSN apakah ada batas minimal tinggi badan?
+
+- intent: syarat_gigi
+  examples: |
+    - Ada syarat giginya nggak min?
+    - Kalo giginya ada yang ngga rata gimana?
+    - kalau gigi berlubang?
+    - gigi saya berbehel nih
+    - gigi behelan masuk gapapa?
+    - gigi saya berkawat gigi bisa masuk nggak?
+    - kalau giginya bolong bisa masuk?
+
+- intent: syarat_berat
+  examples: |
+    - Ada maksimal berat nggak ya?
+    - kalau overweight bisa?
+    - badan saya beratnya tidak ideal gapapa?
+    - berat badan 60kg jadi masih bisa dftr kan min?
+    - min berat badan saya kurang ideal, itu gk bisa dftr ea min?
+    - Min berat badan ideal mempengaruhi penilain gak?
+
+- intent: syarat_mata
+  examples: |
+    - Tapi saya mempunyai mata minus 3. Apakah saya masih bisa berkesempatan masuk ke sekolah tinggi stsn?
+    - Apakah dalam penerimaan mahasiswa baru di Politeknik STSN, calon mahasiswa tidak apa - apa berkacamata / memiliki mata minus. 
+    - apakah calon pendaftar stsn tidak boleh memiliki mata minus?
+    - kalau matanya minus gimana?
+    - mata saya minus, bisa masuk?
+    - sy mau bertanya apakah untuk masuk stsn mata minus 2 bsa mndftar?
+    - Untuk buta warna parsial apa di perbolehkan?
+    - Izin tanya, apakah stsn memperbolehkan mata minus? Terimakasih.
+    - Kalau buta warna parsial apa boleh daftar stsn?
+    - sy penderita miopi minus 6 apakah sy termasuk dalam cacat fisik, apakah sy masih bisa masuk stsn atau ada cara alternatif?
+    - mau nanya, untuk ketentuan mata minus ada nggak?
+    - saya ingin bertanya boleh kah calon pendaftar STSN berkacamata?
+    - Saya mau menanyakan trntang persyaratan kesehatan mata itu bagaimana. Apakah untuk mata minus ada batas maksimalnya
+    - kak mau tanya?kalau mata rabun itu bisa masuk atau nggak ya?
+    - Siap izin bertanya kak, apakah masuk STSN boleh mata minus?
+    - Apakah jika mata minus pada wanita tidak bisa daftar stsn?
+    - Min mau nanya STSN boleh mata minus??
+    - apa ada maksimal minus di stsn?
+    - Saya ingin bertanya,apakah mata minus tetapi tidak buta warna boleh mendaftar di PMB STSN?
+
+- intent: syarat_nilai
+  examples: |
+    - Apabila ada satu nilai dibawah 8 apakah langsung gugur saat mendaftar?
+    - Apakah nilai matematika dan bahasa inggris wajib memiliki nilai minimal 80 pada semester IV dan V?
+    - Jika ada salah satu dari nilai semester tidak mencapai kriteria, tetapi dengan perbedaan rentan hanya 1 point saja, Apakah masih berkesenpatan untuk mendaftar?
+    - apakah jika mau dafta stsn, nilai matematika dan bahasa inggris semester 4 dan 5 harus 80? Dan kalau di antara yang lain nilainya hanya beda 1, contoh : nilai bahasa inggris semester 4 yaitu 79. Apakah masih bisa mengikuti seleksi nantinya?
+    - Nilai matematika semester IV saya 77, apakah tidak bisa mendaftar STSN?
+    - kalau misalkan nilai raport nya ada yg tidak sampai 80 dinyatakan gugur ya? Mohon jawabannya ,terimakasih min
+    - ada nilai minimal tidak?rata" nilai minimal?
+    - kalo nilai dibawah 80 apakah masih bisa daftar?
+    - nilai harus 8 ya?
+    - rapot minimal 8?
+    - nilai rapot ada minimal?
+    - nilai rapot paling kecil berapa?
+
+- intent: random_militer
+  examples: |
+    - Sekolahnya semi militer ya?
+    - ini sekolah militer?
+    - militer ya?
+    - ini dididiknya secara militer/semi militera nggak sih?
+    - stsn itu skolah tinggi persandian di militer bukan?
+    - stsn itu semi-militer gk kak?
+    - Poltek ssn itu semi militer kayak ipdn atau gimana?
+    - Permisi admin.. Apakah STSN ini termasuk sekolah kemiliteran??
+
+- intent: random_link_bermasalah
+  examples: |
+    - Kak mau tanya kok link pendaftaran nya tidak bisa di buka
+    - Kak kok link buat pendaftaran tidak bisa di buka
+    - maaf mengganggu saya mau nanya jika saya mau daftar tapi onlinenya bagaimananya pak saya mau masuk online tapi gak dapet link dan gak bisa masuk
+    - Ko link pendaftaran nya gabisa terus?
+    - Kenapa link-nya tidak bisa dibuka?
+    - Apakah link pendaftaran bermasalah?
+    - Link pendaftaran ngga bisa di buka ada link lainnya??
+
+- intent: thankyou
+  examples: |
+    - oke makasih
+    - thank you
+    - thanks
+    - oke sip
+    - mantap
+    - makasih banyak
+    - nais
+    - nice
+    - makasih
+    - terima kasih
+    - terima kasih banyak
+    - matur nuwun
+    - ok
+    - oke
+    - yaudah
+
+- intent: bot_challenge
+  examples: |
+    - ini siapa min?
+    - ini bot ya?
+    - ini bot bukan sih?
+    - ini admin apa bot?
+    - kamu siapa?
+    - ini admin?
+    - admin bukan?
+
+- intent: out_of_scope
+  examples: |
+    - fasilitas
+    - menu makan
+
+- intent: nlu_fallback
+

@@ -1,0 +1,109 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say no worries after thanks
+  steps:
+  - intent: thankyou
+  - action: utter_no_worries
+
+- rule: bertanya biaya
+  steps:
+  - intent: umum_biaya
+  - action: utter_umum_biaya
+
+- rule: bertanya asrama
+  steps:
+  - intent: umum_asrama
+  - action: utter_umum_asrama
+
+- rule: bertanya kuota
+  steps:
+  - intent: umum_kuota
+  - action: utter_umum_kuota
+
+- rule: bertanya info
+  steps:
+  - intent: umum_informasi
+  - action: utter_umum_informasi
+
+- rule: bertanya kontak
+  steps:
+  - intent: umum_kontak
+  - action: utter_umum_kontak
+
+- rule: bertanya jurusan
+  steps:
+  - intent: umum_jurusan
+  - action: utter_umum_jurusan
+
+- rule: bertanya tempat
+  steps:
+  - intent: umum_tempat_tes
+  - action: utter_umum_tempat_tes
+
+- rule: bertanya rapor wajib peminatan
+  steps:
+  - intent: syarat_wajib_peminatan
+  - action: utter_syarat_wajib_peminatan
+
+- rule: bertanya tinggi
+  steps:
+  - intent: syarat_tinggi
+  - action: utter_syarat_tinggi
+
+- rule: bertanya gigi
+  steps:
+  - intent: syarat_gigi
+  - action: utter_syarat_gigi
+
+- rule: bertanya berat
+  steps:
+  - intent: syarat_berat
+  - action: utter_syarat_berat
+
+- rule: bertanya mata
+  steps:
+  - intent: syarat_mata
+  - action: utter_syarat_mata
+
+- rule: bertanya nilai
+  steps:
+  - intent: syarat_nilai
+  - action: utter_syarat_nilai
+
+- rule: bertanya militer
+  steps:
+  - intent: random_militer
+  - action: utter_random_militer
+
+- rule: bertanya link
+  steps:
+  - intent: random_link_bermasalah
+  - action: utter_random_link_bermasalah
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence 2
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+

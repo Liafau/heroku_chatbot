@@ -1,0 +1,204 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: bertanya 1
+  steps:
+  - intent: sapa
+    user: |
+      assalamualaikum
+  - action: utter_sapa
+  - intent: umum_pendaftaran_waktu
+    user: |
+      min pendaftaran kapan sih?
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_biaya
+    user: |
+      ada biaya masuk?
+  - action: utter_umum_biaya
+  - intent: umum_informasi
+    user: |
+      info pendaftarannya dimana?
+  - action: utter_umum_informasi
+  - intent: thankyou
+    user: |
+      oke makasi
+  - action: utter_no_worries
+
+- story: bertanya 2
+  steps:
+  - intent: sapa
+    user: |
+      Pagi min
+  - action: utter_sapa
+  - intent: umum_pendaftaran_waktu
+    user: |
+      dah buka pendaftarannya
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_biaya
+    user: |
+      bayarnya berapa?
+  - action: utter_umum_biaya
+  - intent: umum_informasi
+    user: |
+      nanti dimana tuh?
+  - action: utter_umum_informasi
+  - intent: thankyou
+    user: |
+      thanks
+  - action: utter_no_worries
+
+- story: tanya 1
+  steps:
+  - intent: sapa
+    user: |
+      min
+  - action: utter_sapa
+  - intent: syarat_mata
+    user: |
+      kalau matanya minus bisa masuk?
+  - action: utter_syarat_mata
+  - intent: syarat_tinggi
+    user: |
+      tinggi badan ada minimalnya nggak sih min?
+  - action: utter_syarat_tinggi
+  - intent: thankyou
+    user: |
+      oh ya makasih min
+  - action: utter_no_worries
+
+- story: tanya 2
+  steps:
+  - intent: sapa
+    user: |
+      siang
+  - action: utter_sapa
+  - intent: syarat_mata
+    user: |
+      slinder tapi ga minus bisa daftar?
+  - action: utter_syarat_mata
+  - intent: syarat_tinggi
+    user: |
+      syarat tinggi berapa?
+  - action: utter_syarat_tinggi
+  - intent: thankyou
+    user: |
+      ok thanks
+  - action: utter_no_worries 
+
+- story: nanya 1
+  steps:
+  - intent: sapa
+    user: |
+      halo
+  - action: utter_sapa
+  - intent: umum_kontak
+    user: |
+      bisa chat wa?
+  - action: utter_umum_kontak
+  - intent: umum_pendaftaran_waktu
+    user: |
+      kapan mulai pendaftaran
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_jurusan
+    user: |
+      dari smk bisa kan?
+  - action: utter_umum_jurusan
+  - intent: thankyou
+    user: |
+       makasih
+  - action: utter_no_worries
+
+- story: nanya 2
+  steps:
+  - intent: sapa
+    user: |
+      pagi admin
+  - action: utter_sapa
+  - intent: umum_kontak
+    user: |
+      bisa minta kontaknya
+  - action: utter_umum_kontak
+  - intent: umum_pendaftaran_waktu
+    user: |
+      udah ada tanggal pendaftaran?
+  - action: utter_umum_pendaftaran_waktu
+  - intent: umum_jurusan
+    user: |
+      dari sma aja ya ini?
+  - action: utter_umum_jurusan
+  - intent: thankyou
+    user: |
+      ok
+  - action: utter_no_worries
+
+- story: nanyain 1
+  steps:
+  - intent: sapa
+    user: |
+      halo selamat siang admin
+  - action: utter_sapa
+  - intent: umum_informasi
+    user: |
+      pendaftaran ini caranya gimana ya?
+  - action: utter_umum_informasi
+  - intent: random_militer
+    user: |
+      disini semi militer ya?
+  - action: utter_random_militer
+  - intent: umum_tempat_tes
+  - action: utter_umum_tempat_tes
+
+- story: ques 1
+  steps:
+  - intent: sapa
+    user: |-
+      misi admin
+  - action: utter_sapa
+  - intent: umum_informasi
+    user: |-
+      syarat untuk pendaftaran bisa dilihat dimana ya?
+  - action: utter_umum_informasi
+  - intent: syarat_wajib_peminatan
+    user: |-
+      syarat untuk nilainya yang dimasukin wajib/peminatan ya?
+  - action: utter_syarat_wajib_peminatan
+  - intent: umum_tempat_tes
+    user: |-
+      tempat tesnya cuma di jakarta?
+  - action: utter_umum_tempat_tes
+  - intent: thankyou
+    user: |-
+      oke makasih min
+  - action: utter_no_worries
+
+- story: ques 2
+  steps:
+  - intent: sapa
+    user: |-
+      pagi admin
+  - action: utter_sapa
+  - intent: umum_informasi
+    user: |-
+      syarat untuk pendaftaran apa aja sih?
+  - action: utter_umum_informasi
+  - intent: syarat_wajib_peminatan
+    user: |-
+      nilai yang dimasukin di rata rata min?
+  - action: utter_syarat_wajib_peminatan
+  - intent: umum_tempat_tes
+    user: |-
+      tempat tesnya dimana aja ya?
+  - action: utter_umum_tempat_tes
+  - intent: thankyou
+    user: |-
+      oh thanks
+  - action: utter_no_worries
+
+- story: bot challenge
+  steps:
+  - user: |
+      ini siapa ya?
+    intent: bot_challenge
+  - action: utter_iamabot
+

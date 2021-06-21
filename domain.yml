@@ -1,0 +1,163 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- sapa:
+    use_entities: true
+- umum_pendaftaran_waktu:
+    use_entities: true
+- umum_biaya:
+    use_entities: true
+- umum_asrama:
+    use_entities: true
+- umum_kuota:
+    use_entities: true
+- umum_informasi:
+    use_entities: true
+- umum_kontak:
+    use_entities: true
+- umum_jurusan:
+    use_entities: true
+- umum_tempat_tes:
+    use_entities: true
+- syarat_wajib_peminatan:
+    use_entities: true
+- syarat_tinggi:
+    use_entities: true
+- syarat_gigi:
+    use_entities: true
+- syarat_berat:
+    use_entities: true
+- syarat_mata:
+    use_entities: true
+- syarat_nilai:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- inform:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- random_militer:
+    use_entities: true
+- random_link_bermasalah:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_sapa:
+  - text: Halo! Apa ada yang bisa saya bantu? 🙏
+  - text: Hi! apakah ada pertanyaan yang ingin anda tanyakan?
+  utter_goodbye:
+  - text: Sampai jumpa lagi 😊
+  - text: See you next time!
+  - text: Selamat tinggal!
+  utter_umum_pendaftaran_waktu:
+  - text: Pendaftaran saat ini belum dibuka, untuk info lebih lanjut harap selalu pantau website kami ya 😊
+  - text: Pendaftaran belum dibuka saat ini, tunggu info lebih lanjut ya 😊
+  - text: terimakasih sudah bertanya, untuk saat ini pendaftaran belum dibuka 🙏
+  utter_umum_biaya:
+  - text: |2
+
+      Tidak dipungut biaya pendidikan dan biaya tinggal di dalam kampus selama menempuh pendidikan 👍
+
+      Biaya yang dikeluarkan hanya saat pelaksanaan seleksi SKD BKN sesuai PP Nomor 63 Tahun 2016 sebesar Rp 50.000,- (lima puluh ribu rupiah) 😊🙏
+
+      Selama seleksi penerimaan tidak menerima sponsorship 🚫
+  utter_umum_asrama:
+  - text: |
+      Disediakah asrama selama mengikuti pendidikan dengan wajib mematuhi peraturan yang sudah ditetapkan. 
+
+      Terdapat asrama putra dan asrama putri dengan fasilitas memadai 😊
+  utter_umum_kuota:
+  - text: Tahun ini Politeknik Siber dan Sandi Negara menampung jumlah peserta didik sejumlah 100 orang, dengan kuota putra dan putri yang tidak ditentukan.
+  utter_umum_informasi:
+  - text: Informasi pendaftaran bisa dilihat pada website STSN  https://poltekssn.ac.id/pendaftaran/ apabila masih ada yang dibingungkan, silakan bisa ditanyakan 😊🙏
+  utter_umum_kontak:
+  - text: |
+      Berikut beberapa kontak PoltekSSN yang dapat dihubungi:
+      HP = 0811-886-6565
+      Whatsapp = 0811-886-6565
+      E-mail = spmb@poltekssn.ac.id
+      Twitter = @spmb_poltekssn
+      Facebook = SPMB PoltekSSN
+        Harap untuk munghubungi sesuai hari layanan, yaitu pada Senin - Jumat pada hari kerja, dari pukul 09.00 - 15.00 WIB 😊🙏
+  utter_umum_jurusan:
+  - text: |2
+
+      Pendaftar PoltekSSN bisa merupakan lulusan dari=
+      1. SMA Jurusan IPA
+      2. Madrasah Aliyah Jurusan IPA
+      3. SMK Teknik Elektronika
+          a. Teknik Audio Video
+          b. Teknik Elektronika Industri
+          c. Teknik Eletronika Daya dan Komunikasi
+      4. SMK TI Bidang Keahlian Teknologi Informasi dan Komunikasi
+          a. Rekayasa Perangkat Lunak
+          b. Teknik Komputer dan Jaringan
+          c. Sistem Informatika, Jaringan dan Aplikasi
+  utter_umum_tempat_tes:
+  - text: SPMB PoltekSSN hanya dilaksanakan di dua lokasi yaitu Yogyakarta dan Jakarta
+  utter_syarat_wajib_peminatan:
+  - text: Silakan memasukkan nilai Pengetahun/Umum/Wajib ya 😊🙏
+  utter_syarat_tinggi:
+  - text: Tidak terdapat syarat minimal tinggi untuk mendaftar di PoltekSSN
+  utter_syarat_gigi:
+  - text: Tidak terdapat syarat khusus. Namun, diharapkan pendaftar memiliki gigi yang sehat 😊🙏
+  utter_syarat_berat:
+  - text: Tidak terdapat ketentuan berat badan. Namun diharapkan pendaftar memiliki badan yang sehat dan ideal 😊🙏
+  utter_syarat_mata:
+  - text: Untuk mata minus dan silinder diperbolehkan untuk mendaftar. Pendaftar PoltekSSN wajib tidak buta warna.
+  utter_syarat_nilai:
+  - text: Syarat nilai rapot matematika dan bahasa inggris adalah minimal 80 untuk semester 4 dan 5
+  utter_random_militer:
+  - text: Politeknik Siber dan Sandi negara merupakan Sekolah Kedinasan Semi Militer
+  utter_iamabot:
+  - text: Hai ini adalah bot Poltek SSN 🤖
+  utter_no_worries:
+  - text: Senang bisa membantu 😊🙏
+  utter_random_link_bermasalah:
+  - text: Mohon coba beberapa saat lagi 😊🙏
+  utter_out_of_scope:
+  - text: Mohon maaf kami belum bisa menjawab pertanyaan ini harap hubungi contact person kami yang lain seperti pada twitter, email, wa dll. 😊🙏
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+actions:
+- utter_goodbye
+- utter_sapa
+- utter_umum_pendaftaran_waktu
+- utter_umum_biaya
+- utter_umum_asrama
+- utter_umum_kuota
+- utter_umum_informasi
+- utter_umum_kontak
+- utter_umum_jurusan
+- utter_umum_persyaratan
+- utter_umum_tempat_tes
+- utter_syarat_wajib_peminatan
+- utter_syarat_tinggi
+- utter_syarat_gigi
+- utter_syarat_berat
+- utter_syarat_mata
+- utter_syarat_nilai
+- utter_random_militer
+- utter_iambot
+- utter_no_worries
+- utter_random_link_bermasalah
+- utter_out_of_scope
+- utter_please_rephrase
+- utter_default
+forms: {}
+e2e_actions: []
+
