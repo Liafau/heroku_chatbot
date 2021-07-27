@@ -131,8 +131,8 @@ responses:
   - text: Mohon maaf kami belum bisa menjawab pertanyaan ini harap hubungi contact person kami yang lain seperti pada twitter, email, wa dll. 😊🙏
   utter_please_rephrase:
   - text: Mohon maaf kami belum bisa menjawab pertanyaan ini. Silakan bertanya kembali atau harap hubungi contact person kami yang lainnya 😊🙏
-  utter_default:
-  - text: Sorry I didn't get that. Can you rephrase?
+  #utter_default:
+  #- text: Sorry I didn't get that. Can you rephrase?
 actions:
 - utter_goodbye
 - utter_sapa
